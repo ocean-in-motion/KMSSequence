@@ -1588,7 +1588,6 @@
       if(caption) captionEl.querySelector('.cc-sub').textContent = caption;
     }
     function render(){
-      pauseAllVideos();
       trackEl.style.transform = 'translateX(-' + (index * 100) + '%)';
       dots.forEach((d, i) => d.classList.toggle('active', i === index));
       updateCaption();
